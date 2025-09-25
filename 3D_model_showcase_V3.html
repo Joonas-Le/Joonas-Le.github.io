@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<title>3D Models</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<!-- css -->
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    .mySlides1,
+    .mySlides2 {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover,
+    .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+
+    h1 {
+        color: chartreuse;
+    }
+
+    #big_container {
+        border: aqua 7px groove;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .text_container {
+        position: relative;
+        float: left;
+        left: 0%;
+        width: 40%;
+        margin: 1%;
+    }
+
+    .slideshow-container {
+        position: relative;
+        overflow: auto;
+        left: 5%;
+        border: 7px groove;
+        width: 50%;
+        margin: 1%;
+    }
+
+
+    .hover_opacity {
+        opacity: 60%;
+        cursor: pointer;
+    }
+
+    .hover_opacity:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+
+    .small_img_container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    .small_img_container img {
+        opacity: 60%;
+    }
+
+    .small_img_container img:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column_4_imgs {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+</style>
+
+
+<!-- Elements -->
+
+<body>
+    <div id="big_container">
+        <h1>Fade in Overlay</h1>
+        <p>Hover over the image to see the effect.</p>
+
+        <div class="text_container">
+            <h2>Header for FIRST image</h2>
+            <p>Some example text on the FIRST image...</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="images\video0001-0120.gif" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images\rock.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images\Laatikko.gif" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+
+        <div class="text_container">
+            <h2>Header for SECOND image</h2>
+            <p>Some example text on the SECOND image...</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img src="images\video0001-0120.gif" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="images\rock.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="images\Laatikko.gif" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="images\kiertokanki.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+            <div class="small_img_container">
+                <div class="row">
+                    <div class="column_4_imgs">
+                        <img src="images\video0001-0120.gif" style="width: 100%;" onclick="currentDiv(1,1)">
+                    </div>
+                    <div class="column_4_imgs">
+                        <img src="images\rock.PNG" style="width: 100%;" onclick="currentDiv(2,1)">
+                    </div>
+                    <div class="column_4_imgs">
+                        <img src="images\Laatikko.gif" style="width: 100%;" onclick="currentDiv(3,1)">
+                    </div>
+                    <div class="column_4_imgs">
+                        <img src="images\kiertokanki.jpg" style="width: 100%;" onclick="currentDiv(4,1)">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="text_container">
+            <h2>Header for THIRD image</h2>
+            <p>Some example text on the THIRD image...</p>
+        </div>
+        <div class="slideshow-container">
+            <img src="images\Laatikko_Still_1080.png" class="image" />
+            <div class="overlay">
+                <img src="images\Laatikko.gif" class="image" />
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!-- Javascript -->
+<script>
+    let slideIndex = [1, 1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+
+function currentDiv(n, groupIndex) {
+    showDivs(slideIndex[groupIndex] = n, groupIndex);
+}
+
+function showDivs(n, groupIndex) {
+    let slides = document.getElementsByClassName(slideId[groupIndex]);
+
+    if (n > slides.length) {
+        slideIndex[groupIndex] = 1;
+    }
+    if (n < 1) {
+        slideIndex[groupIndex] = slides.length;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex[groupIndex] - 1].style.display = "block";
+}
+
+
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) { slideIndex[no] = 1 }
+        if (n < 1) { slideIndex[no] = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+    }
+
+
+
+
+</script>
+
+</body>
+
+</html>

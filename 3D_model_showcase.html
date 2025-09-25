@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<!-- metadata -->
+<title>3D Models</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+<!-- Elements -->
+
+<body>
+
+  <div class="Container">
+    <h1>Fade in Overlay</h1>
+    <p>Hover over the image to see the effect.</p>
+
+
+    <!-- Tabs -->
+    <div class="tab">
+      <button class="tablinks" onclick="window.location.href='index.html'"><b>Back to Home Page</b></button>
+      <button id="defaultOpen" class="tablinks" onclick="openMainTab(event, 'Solidworks')"><b>Solidworks Models</b></button>
+      <button class="tablinks" onclick="openMainTab(event, 'My Works')"><b>My Other Works</b></button>
+    </div>
+
+
+    <!-- Tab Contents/Texts -->
+    <div id="Solidworks" class="tabcontent">
+      <h2>CAD Models</h2>
+      <p>The models below are modeled in Solidworks and most of the animated renders are made in Blender.
+        I usually model things that I find practical or otherwise cool when 3D printed. Check out the catalog below,
+        and if you want to manually rewind the videos or get
+        a better look at some of the images I suggest opening them into a new tab.
+        I had to reduce the images'/videos' resolution to keep site's loading speed manageable, so don't
+        look <i>too</i> much into them :)
+      </p>
+    </div>
+
+
+    <div id="My Works" class="tabcontent">
+      <div class="text_container">
+        <h2>3D modeling</h2>
+        <p>Check out my what other things I have 3D modeled:</p>
+      </div>
+      <button class="tablinks" onclick="window.location.href='3D_model_showcase_V3.html'"><b>Blender</b></button>
+      <button class="tablinks" onclick="window.location.href='3D_model_showcase_V3.html'"><b>Other
+          Softwares</b></button>
+
+      <br><br>
+
+
+      <div class="text_container">
+        <h2>School Projects</h2>
+        <p>Some of the more interesting course projects I have had in University:</p>
+      </div>
+      <button class="tablinks" onclick="window.location.href='3D_model_showcase_V3.html'"><b>Jau</b></button>
+
+      <br><br>
+
+      <div class="text_container">
+        <h2>Own Games</h2>
+        <p>I've been working on some prototypes:</p>
+      </div>
+      <button class="tablinks" onclick="window.location.href='3D_model_showcase_V3.html'"><b>Jau</b></button>
+    </div>
+
+
+
+
+
+
+    <!-- 2. Model: Bio bag shelf -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Crate for batteries</h2>
+        <p>Some example text on the FIRST image... text, text, text, text, text, text, text,
+          text, text, text, text, text, text, text...
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides2">
+          <video class="video" autoplay loop muted>
+            <source src="media\paristolaatikko\Paristolaatikko_760K.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides2">
+          <img src="media\paristolaatikko\ParistoLaatikko_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides2">
+          <img src="media\placeholder_soon.png" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video" autoplay loop muted style="width: 100%;" onclick="currentDiv(1,2)">
+                <source src="media\paristolaatikko\Paristolaatikko_760K.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img src="media\paristolaatikko\ParistoLaatikko_Still.png" style="width: 100%;" onclick="currentDiv(2,2)">
+            </div>
+            <div class="column_3_imgs">
+              <img src="media\placeholder_soon.png" style="width: 100%;" onclick="currentDiv(3,2)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 1. Model: Keycap -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Crate for batteries</h2>
+        <p>Some example text on the FIRST image... text, text, text, text, text, text, text,
+          text, text, text, text, text, text, text...
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides1">
+          <video class="video" autoplay loop muted>
+            <source src="media\paristolaatikko\Paristolaatikko_760K.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides1">
+          <img src="media\paristolaatikko\ParistoLaatikko_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides1">
+          <img src="media\placeholder_soon.png" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video" autoplay loop muted style="width: 100%;" onclick="currentDiv(1,1)">
+                <source src="media\paristolaatikko\Paristolaatikko_760K.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img src="media\paristolaatikko\ParistoLaatikko_Still.png" style="width: 100%;" onclick="currentDiv(2,1)">
+            </div>
+            <div class="column_3_imgs">
+              <img src="media\placeholder_soon.png" style="width: 100%;" onclick="currentDiv(3,1)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 0. Model: Crate for batteries -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Crate for batteries</h2>
+        <p>Some example text on the FIRST image... text, text, text, text, text, text, text,
+          text, text, text, text, text, text, text...
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides0">
+          <video class="video" autoplay loop muted>
+            <source src="media\paristolaatikko\Paristolaatikko_760K.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides0">
+          <img src="media\paristolaatikko\ParistoLaatikko_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides0">
+          <img src="media\placeholder_soon.png" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video" autoplay loop muted style="width: 100%;" onclick="currentDiv(1,0)">
+                <source src="media\paristolaatikko\Paristolaatikko_760K.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img src="media\paristolaatikko\ParistoLaatikko_Still.png" style="width: 100%;" onclick="currentDiv(2,0)">
+            </div>
+            <div class="column_3_imgs">
+              <img src="media\placeholder_soon.png" style="width: 100%;" onclick="currentDiv(3,0)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <p>&copy;2025-2075. Joonas L. All Rights Reserved.</p>
+  </footer>
+</body>
+
+
+<!-- Javascript link-->
+<script src="script.js"></script>
+
+</html>
