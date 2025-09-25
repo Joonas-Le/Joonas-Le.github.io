@@ -1,0 +1,342 @@
+html {
+    background-color: #444760;
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 150%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+    margin: 0;
+    color: #392b35;
+
+}
+
+p {
+    color: #d1bfb0;
+    font-size: 24px;
+    text-align: left;
+}
+
+p.intro {
+    color: #392b35;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+    color: #392b35;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    color: #d1bfb0;
+    font-size: 36px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+.Container {
+    outline: #bb474f 8px solid;
+    border: #392b35 24px double;
+    outline-offset: -16px;
+
+    background-color: #7a9c96;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+
+    padding: 15px;
+    margin: 20px auto; 
+    text-align: center;
+    flex: 1;
+}
+
+.bulletpoint_container {
+    color: #d1bfb0;
+    width: 50%;
+    text-align: left;
+    flex: 1;
+}
+
+#ChangePortrait {
+  background-image: url('media/portrait_export.png');
+  width: 264px;
+  height: 388px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+#ChangePortrait:hover {
+   background-image: url('media/portrait_smile.png');
+}
+
+.bulletpoint_w_image {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+
+
+footer {
+  padding: 10px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 2px solid #392b35;
+    background-color: #423952;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    color: #bb474f;
+    float: center;
+    border: none;
+    cursor: pointer;
+    padding: 14px 30px;
+    transition: 0.3s;
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.tabcontent button {
+    background-color: #423952;
+    color: #bb474f;
+    border: 2px solid #392b35;
+    cursor: pointer;
+    padding: 14px 30px;
+    transition: 0.3s;
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Change background color of buttons on hover */
+.tabcontent button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabcontent button.active {
+    background-color: #ccc;
+}
+
+
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    background-color: #486b7f;
+    border: 2px solid #444760;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.sub_tabcontent {
+    display: none;
+}
+
+.text_container {
+    width: 100%;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mySlides0,
+.mySlides1,
+.mySlides2 {
+    display: none
+}
+
+img,
+video {
+    vertical-align: middle;
+    border: 3px #392b35 solid;
+    border-radius: 4px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.slideshow_text_cont {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.slideshow_cont {
+    position: relative;
+    overflow: auto;
+    margin: 1%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 4px solid #392b35;
+    background-color: #486b7f;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+
+.slideshow_cont,
+.slideshow_text_cont {
+    flex: 1 1 300px;
+}
+
+
+.small_img_container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.small_img_container img,
+.small_img_container video {
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+.small_img_container img:hover,
+.small_img_container video:hover {
+    filter: brightness(100%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.column_4_imgs {
+    float: left;
+    width: 25%;
+    padding: 4px;
+}
+
+.column_3_imgs {
+    float: left;
+    width: 33.3%;
+    padding: 4px;
+}
+
+/* This column is used ONLY for home page image collages!! */
+.column {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata -->
+    <title>Bingus3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- css -->
+    <style>
+      h1 {
+        color: chartreuse;
+      }
+
+      #big_container {
+        border: aqua 7px groove;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        cursor: pointer;
+      }
+
+      .text_container {
+        position: relative;
+        float: left;
+        left: 0%;
+        width: 40%;
+        margin: 1%;
+      }
+
+      .img_container {
+        position: relative;
+        overflow: auto;
+        left: 5%;
+        border: 7px groove;
+        width: 50%;
+        margin: 1%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+
+      .img_container:hover .overlay {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <!-- elements -->
+  <body>
+    <div id="big_container">
+      <h1>Fade in Overlay</h1>
+      <p>Hover over the image to see the effect.</p>
+
+      <div class="text_container">
+        <h2>Header for FIRST image</h2>
+        <p>Some example text on the FIRST image...</p>
+      </div>
+      <div class="img_container">
+        <img src="images\Laatikko_Still_1080.png" class="image" />
+        <div class="overlay">
+          <img src="images\Laatikko.gif" class="image" />
+        </div>
+      </div>
+
+      <div class="text_container">
+        <h2>Header for SECOND image</h2>
+        <p>Some example text on the SECOND image...</p>
+      </div>
+      <div class="img_container">
+        <img src="images\Laatikko_Still_1080.png" class="image" />
+        <div class="overlay">
+          <img src="images\Laatikko.gif" class="image" />
+        </div>
+      </div>
+
+      <div class="text_container">
+        <h2>Header for THIRD image</h2>
+        <p>Some example text on the THIRD image...</p>
+      </div>
+      <div class="img_container">
+        <img src="images\Laatikko_Still_1080.png" class="image" />
+        <div class="overlay">
+          <img src="images\Laatikko.gif" class="image" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
