@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<!-- metadata -->
+<title>Solidworks Models</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+<!-- Elements -->
+
+<body>
+
+  <div class="Container">
+    <h1>3D Models made in Solidworks</h1>
+
+    <!-- Tabs -->
+    <div class="tab">
+      <button class="tablinks" onclick="window.location.href='index.html'"><b>Back to Home Page</b></button>
+      <button id="defaultOpen" class="tablinks" onclick="openMainTab(event, 'Solidworks')"><b>Solidworks
+          Models</b></button>
+      <button class="tablinks" onclick="openMainTab(event, 'My Works')"><b>My Other Works</b></button>
+    </div>
+
+
+    <!-- Tab Contents/Texts -->
+    <div id="Solidworks" class="tabcontent">
+      <h2>CAD Modeling</h2>
+      <p>The models below are modeled in Solidworks and most of the animated renders are made in Blender.
+        I usually model things that I find practical or otherwise cool when 3D printed. Check out the catalog below,
+        and if you want to manually rewind the videos or get
+        a better look at some of the images I suggest opening them into a new tab.
+        I had to reduce the images'/videos' resolution to keep site's loading speed manageable, so don't
+        look <i>too</i> much into them :)
+      </p>
+    </div>
+
+
+    <div id="My Works" class="tabcontent">
+      <div class="text_container">
+        <h2>3D modeling</h2>
+        <p>Check out what other things I have made in 3D:</p>
+      </div>
+      <button class="tablinks" onclick="window.location.href='3D_models_Blender.html'"><b>Blender</b></button>
+      <button class="tablinks" onclick="window.location.href=''"><b>Other Softwares (COMING SOON) </b></button>
+
+      <br><br>
+
+
+      <div class="text_container">
+        <h2>School Projects</h2>
+        <p>Some of the more interesting course projects I have had in University:</p>
+      </div>
+      <button class="tablinks" onclick="window.location.href=''"><b>(COMING SOON)</b></button>
+
+      <br><br>
+
+      <div class="text_container">
+        <h2>Other Projects</h2>
+        <p>I've been working on some silly things:</p>
+      </div>
+      <button class="tablinks" onclick="window.location.href='Cat_GPT.html'"><b>CatGPT</b></button>
+      <button class="tablinks" onclick="window.location.href=''"><b>Games (COMING SOON)</b></button>
+    </div>
+
+    <!-- All the models below indexed with Model number (M-nro) -->
+    <!-- The first number is 0 because of the correct indexing -->
+    <!-- REMEMBER TO CHANGE (in Html) mySlides(M-nro), plusSlides(x, M-nro) AND currentDiv(x, M-nro)!!! -->
+    <!-- ALSO add M-nro to CSS "mySlides(M-nro)" AND Javascript "let slideIndex = [1, 1, 1, 1];" etc. -->
+
+
+
+
+    <!-- 11. Model: Tuuletinsuoja -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Fan Adapter</h2>
+        <p>This is used to suck fumes out of my 3D-printer to a more ventilated area. The adapter
+          consists of the 3D printed rim, a box for electronics, a piece of filter wool and an old
+          computer fan. A plastic tube is finally atached to the "funnel"-looking part.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides11">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\tuuletinsuoja\Tuuletinsuoja.mp4" style="width: 100%;">
+          </video>
+        </div>
+
+        <div class="mySlides11">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\tuuletinsuoja\Assembly_TuuletinSuoja.mp4" style="width: 100%;">
+          </video>
+        </div>
+
+        <div class="mySlides11">
+          <img src="media\SW\tuuletinsuoja\Tuuletinsuoja_Still.png" style="width:100%">
+        </div>
+
+        <div class="mySlides11">
+          <img src="media\SW\tuuletinsuoja\TuuletinSuoja_Pic_Osissa.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides11">
+          <img src="media\SW\tuuletinsuoja\TuuletinSuoja_Pic_Kasassa.jpg" style="width:100%">
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1, 11)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 11)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 11)">
+                <source src="media\SW\tuuletinsuoja\Tuuletinsuoja.mp4">
+              </video>
+            </div>
+
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(2, 11)">
+                <source src="media\SW\tuuletinsuoja\Assembly_TuuletinSuoja.mp4">
+              </video>
+            </div>
+
+
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\tuuletinsuoja\Tuuletinsuoja_Still.png" style="width: 100%;"
+                onclick="currentDiv(3, 11)">
+            </div>
+
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\tuuletinsuoja\TuuletinSuoja_Pic_Osissa.jpg" style="width: 100%;"
+                onclick="currentDiv(4, 11)">
+            </div>
+
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\tuuletinsuoja\TuuletinSuoja_Pic_Kasassa.jpg" style="width: 100%;"
+                onclick="currentDiv(5, 11)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 10. Model: Jet Engine -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Simple Jet Engine</h2>
+        <p>I wanted to check the airflow coming out of my computer with a visual indicator and thought to
+          build a miniature jet engine. The air flows from the bottom through the back propeller.
+          The back propeller spins the shaft and therefore the front propeller. To make the
+          rotation as smooth as possible, I put a skateboard bearing to the shaft.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides10">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\jetengine\JetEngine_Assembly.mp4" style="width: 100%;">
+          </video>
+        </div>
+        <div class="mySlides10">
+          <img src="media\SW\jetengine\JetEngine_Still.png" style="width:100%">
+        </div>
+
+        <div class="mySlides10">
+          <img src="media\SW\jetengine\JetEngine_Pic.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 10)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 10)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 10)">
+                <source src="media\SW\jetengine\JetEngine_Assembly.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\jetengine\JetEngine_Still.png" style="width: 100%;"
+                onclick="currentDiv(2, 10)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\jetengine\JetEngine_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3, 10)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 9. Model: Carabiner -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Carabiner</h2>
+        <p>A simple but surprisingly durable little carabiner. I still wouldn't recommend climbing with it.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides9">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\carabiner\Carabiner.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides9">
+          <img src="media\SW\carabiner\carabiner_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides9">
+          <img src="media\SW\carabiner\Carabiner_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 9)">
+                <source src="media\SW\carabiner\Carabiner.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\carabiner\carabiner_Still.png" style="width: 100%;"
+                onclick="currentDiv(2, 9)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\carabiner\Carabiner_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3, 9)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 8. Model: Mini 3DS -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Mini Nintendo 3DS Case</h2>
+        <p>Very stylish case for a SD card adapter. Modeled using "print-in-place" method for the
+          hinge, so it can be 3D printed in one go.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides8">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\mini_3DS\Mini_3DS.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides8">
+          <img src="media\SW\mini_3DS\Mini_3DS_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides8">
+          <img src="media\SW\mini_3DS\Mini_3DS_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 8)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 8)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 8)">
+                <source src="media\SW\mini_3DS\Mini_3DS.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\mini_3DS\Mini_3DS_Still.png" style="width: 100%;"
+                onclick="currentDiv(2, 8)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\mini_3DS\Mini_3DS_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3, 8)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 7. Model: TM6577 -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>TM6577 Threaded Container</h2>
+        <p>A small threaded container that looks like a Finnish anti-tank mine. This was my
+          first time 3D printing threads, and luckily it was a success. The last
+          image shows the prototype on the left and the final "product" on the right.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides7">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\TM6577\TM6577.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+
+        <div class="mySlides7">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\TM6577\TM6577_Operation.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+
+        <div class="mySlides7">
+          <img src="media\SW\TM6577\TM6577_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides7">
+          <img src="media\SW\TM6577\TM6577_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_4_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 7)">
+                <source src="media\SW\TM6577\TM6577.mp4">
+              </video>
+            </div>
+            <div class="column_4_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(2, 7)">
+                <source src="media\SW\TM6577\TM6577_Operation.mp4">
+              </video>
+            </div>
+
+            <div class="column_4_imgs">
+              <img class="thumb" src="media\SW\TM6577\TM6577_Still.png" style="width: 100%;" onclick="currentDiv(3, 7)">
+            </div>
+            <div class="column_4_imgs">
+              <img class="thumb" src="media\SW\TM6577\TM6577_Pic.jpg" style="width: 100%;" onclick="currentDiv(4, 7)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 6. Model: Hammaslankainteline -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Dental Floss Holder</h2>
+        <p>Small and simple holder for those dental floss sticks that I <b>for sure</b> use <b>everyday</b> <br>
+          (Don't mind the coffee cups)
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides6">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\hammaslankainteline\Hammaslankainteline.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides6">
+          <img src="media\SW\hammaslankainteline\Hammaslankainteline_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides6">
+          <img src="media\SW\hammaslankainteline\Hammaslankainteline_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 6)">
+                <source src="media\SW\hammaslankainteline\Hammaslankainteline.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\hammaslankainteline\Hammaslankainteline_Still.png" style="width: 100%;"
+                onclick="currentDiv(2, 6)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\hammaslankainteline\Hammaslankainteline_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3, 6)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 5. Model: Kapulateline -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Drumstick Holder</h2>
+        <p>I didn't have a good place for my drumsticks, so I 3D printed a holder for them. Now they
+          can hang on my drum set. I didn't use my set in the last pic, because the image would
+          have been too cluttered.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides5">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\kapulateline\Kapulateline.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides5">
+          <img src="media\SW\kapulateline\Kapulateline_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides5">
+          <img src="media\SW\kapulateline\Kapulateline_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 5)">
+                <source src="media\SW\kapulateline\Kapulateline.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\kapulateline\Kapulateline_Still.png" style="width: 100%;"
+                onclick="currentDiv(2, 5)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\kapulateline\Kapulateline_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3, 5)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 4. Model: Jaakaappimagneetti -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Fridge Magnet</h2>
+        <p>Simple part that needs two small magnets, and then it can be used on a fridge to hold papers.
+          I use the hook on the back for larger papers and the magnets on the front to hang post-it notes
+          with paperclips.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides4">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\jaakaappimagneetti\Jaakaappimagneetti.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides4">
+          <img src="media\SW\jaakaappimagneetti\Jaakaappimagneetti_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides4">
+          <img src="media\SW\jaakaappimagneetti\Jaakaappimagneetti_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1, 4)">
+                <source src="media\SW\jaakaappimagneetti\Jaakaappimagneetti.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\jaakaappimagneetti\Jaakaappimagneetti_Still.png" style="width: 100%;"
+                onclick="currentDiv(2, 4)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\jaakaappimagneetti\Jaakaappimagneetti_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3, 4)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 3. Model: Noppa -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Weighted Dice</h2>
+        <p>By modeling and modifying some slicer settings you can get one part of your model
+          way heavier than other the parts. I 3D printed this dice and threw it around for a while
+          and can say that getting a 6 is very probable and getting a 1 is extra rare.
+
+        </p>
+      </div>
+      <div class="slideshow_cont">
+
+        <div class="mySlides3">
+          <img src="media\SW\noppa\Noppa_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides3">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\noppa\Noppa.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+
+        <div class="mySlides3">
+          <img src="media\placeholder_soon.png" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\noppa\Noppa_Still.png" style="width: 100%;" onclick="currentDiv(1, 3)">
+            </div>
+
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(2, 3)">
+                <source src="media\SW\noppa\Noppa.mp4">
+              </video>
+            </div>
+
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\placeholder_soon.png" style="width: 100%;" onclick="currentDiv(3, 3)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 2. Model: Bio bag shelf -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Small Shelf For Plastic Bags</h2>
+        <p>This is mounted without screws to the inner wall of a cabinet. This
+          version is quite small, so I have to model it again it sometime later.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides2">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\biohylly\BioHylly.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides2">
+          <img src="media\SW\biohylly\BioHylly_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides2">
+          <img src="media\SW\biohylly\BioHylly_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1,2)">
+                <source src="media\SW\biohylly\BioHylly.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\biohylly\BioHylly_Still.png" style="width: 100%;"
+                onclick="currentDiv(2,2)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\biohylly\BioHylly_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3,2)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 1. Model: Keycap -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Keycap Button Cover</h2>
+        <p>I just thought it would look cool.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides1">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\keycap\KeyCap.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides1">
+          <img src="media\SW\keycap\KeyCap_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides1">
+          <img src="media\SW\keycap\KeyCap_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1,1)">
+                <source src="media\SW\keycap\KeyCap.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\keycap\KeyCap_Still.png" style="width: 100%;" onclick="currentDiv(2,1)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\keycap\KeyCap_Pic.jpg" style="width: 100%;" onclick="currentDiv(3,1)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 0. Model: Crate for batteries -->
+    <div class="flex_container">
+      <div class="slideshow_text_cont">
+        <h2>Beer Case For Batteries</h2>
+        <p>Got tired of having AA-batteries just lying around, so I made this Beer case for them.
+        </p>
+      </div>
+      <div class="slideshow_cont">
+        <div class="mySlides0">
+          <video class="video" autoplay loop muted>
+            <source src="media\SW\paristolaatikko\Paristolaatikko.mp4" style="width: 100%;" loading="lazy">
+          </video>
+        </div>
+        <div class="mySlides0">
+          <img src="media\SW\paristolaatikko\Paristolaatikko_Still.png" style="width:100%" loading="lazy">
+        </div>
+
+        <div class="mySlides0">
+          <img src="media\SW\paristolaatikko\Paristolaatikko_Pic.jpg" style="width:100%" loading="lazy">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        <div class="small_img_container">
+          <div class="row">
+            <div class="column_3_imgs">
+              <video class="video thumb" autoplay loop muted style="width: 100%;" onclick="currentDiv(1,0)">
+                <source src="media\SW\paristolaatikko\Paristolaatikko.mp4">
+              </video>
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\paristolaatikko\Paristolaatikko_Still.png" style="width: 100%;"
+                onclick="currentDiv(2,0)">
+            </div>
+            <div class="column_3_imgs">
+              <img class="thumb" src="media\SW\paristolaatikko\Paristolaatikko_Pic.jpg" style="width: 100%;"
+                onclick="currentDiv(3,0)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <p>&copy;2025. Joonas L. All Rights Reserved.</p>
+  </footer>
+
+
+  <!-- Javascript link-->
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>

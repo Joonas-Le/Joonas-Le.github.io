@@ -1,0 +1,547 @@
+html {
+    background-color: #444760;
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 150%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    color: #392b35;
+
+}
+
+p {
+    color: #d1bfb0;
+    font-size: 24px;
+    text-align: left;
+}
+
+p.intro {
+    color: #392b35;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+    color: #392b35;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    color: #d1bfb0;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+a {
+    color: #bb474f;
+    /* Change to your desired color */
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Container {
+    outline: #bb474f 6px solid;
+    border: #392b35 18px double;
+    outline-offset: -12px;
+
+    background-color: #7a9c96;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.bulletpoint_container {
+    color: #d1bfb0;
+    width: 50%;
+    text-align: left;
+    flex: 1;
+}
+
+#ChangePortrait {
+    background-image: url('media/home/portrait_export.png');
+    width: 264px;
+    height: 388px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+#ChangePortrait:hover {
+    background-image: url('media/home/portrait_smile.png');
+}
+
+.bulletpoint_w_image {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Responsive stacking */
+@media screen and (max-width: 768px) {
+    .bulletpoint_w_image {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row_grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 90%;
+        /* Optional: keep it nicely sized */
+    }
+
+
+    .flex_container {
+        flex-direction: column;
+        align-items: stretch;
+        /* optional: makes children fill width */
+    }
+
+    .slideshow_text_cont {
+        text-align: center;
+        /* optional: center text on small screens */
+        margin-bottom: 10px;
+        /* spacing between text and scroll container */
+    }
+
+    .scroll-container {
+        overflow-x: auto;
+    }
+
+}
+
+
+
+
+footer {
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.Log_lists {
+    color: #d1bfb0;
+    text-align: left;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 3px solid #392b35;
+    background-color: #423952;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    color: #bb474f;
+    float: center;
+    border: none;
+    cursor: pointer;
+    padding: 14px 30px;
+    transition: 0.3s;
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.tabcontent button {
+    background-color: #423952;
+    color: #bb474f;
+    border: 3px solid #392b35;
+    cursor: pointer;
+    padding: 14px 30px;
+    transition: 0.3s;
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Change background color of buttons on hover */
+.tabcontent button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabcontent button.active {
+    background-color: #ccc;
+}
+
+
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    background-color: #486b7f;
+    border: 3px solid #392b35;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.sub_tabcontent {
+    display: none;
+}
+
+.text_container {
+    width: 100%;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mySlides0,
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5,
+.mySlides6,
+.mySlides7,
+.mySlides8,
+.mySlides9,
+.mySlides10,
+.mySlides11,
+.mySlides12 {
+    display: none
+}
+
+img,
+video {
+    vertical-align: middle;
+    border: 3px #392b35 solid;
+    border-radius: 4px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+
+
+/* Positions of the "prev/next buttons" to the considering the image border/radius (3px) */
+.prev {
+    left: 3px;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+    right: 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.slideshow_text_cont {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.slideshow_cont {
+    position: relative;
+    overflow: auto;
+    margin: 1%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 4px solid #392b35;
+    background-color: #486b7f;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+
+.slideshow_cont,
+.slideshow_text_cont {
+    flex: 1 1 300px;
+}
+
+
+.small_img_container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.small_img_container img,
+.small_img_container video {
+    filter: brightness(50%);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.small_img_container .active-thumb {
+    filter: brightness(100%) !important;
+}
+
+.small_img_container img:hover,
+.small_img_container video:hover {
+    filter: brightness(100%);
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.row_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    /* Center each image horizontally */
+    padding: 10px;
+}
+
+.column_4_imgs {
+    float: left;
+    width: 25%;
+    padding: 4px;
+}
+
+.column_3_imgs {
+    float: left;
+    width: 33.3%;
+    padding: 4px;
+}
+
+/* This column is used ONLY for home page image grid!! */
+.column {
+    padding: 0;
+}
+
+.column img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* Scroll containers used for Blender models tab: */
+
+.scroll-container {
+    flex: 2 1 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: #423952;
+    border: 3px solid #392b35;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 100%;
+    min-height: 320px; 
+
+
+    /* Firefox scrollbar */
+    scrollbar-width: auto;
+    scrollbar-color: #bb474f #555;
+
+}
+
+.scroll-content {
+    display: inline-flex;
+    gap: 0px;
+}
+
+.scroll-content img,
+.scroll-content video {
+    max-height: 300px;
+    width: auto;
+    flex-shrink: 0;
+    border: 3px solid #392b35;
+    border-radius: 4px;
+}
+
+
+
+/* Webkit scrollbar */
+.scroll-container::-webkit-scrollbar {
+    height: 16px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #555;
+    border-radius: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #bb474f;
+    border-radius: 8px;
+    border: 3px solid #555;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #a53b42;
+}
+
+
+
+
+
+
+/* CatGPT */
+
+#catAvatar {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+
+#chatbox {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #444760;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+    font-size: 30px;
+    border: 3px #392b35 solid;
+}
+
+#chatlog {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.user {
+    color: #bb474f;
+}
+
+.bot {
+    color: #7a9c96;
+}
+
+#userInput {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-family: "Agency FB", Arial, sans-serif;
+}
+
+#ChatSendBtn {
+    width: 25%;
+    padding: 8px;
+    background-color: #bb474f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#ChatSendBtn:hover {
+    background-color: #a53b42;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE <html>
+<html>
+<!-- metadata -->
+<title>Joonas' Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<!-- elements -->
+
+<body>
+  <main>
+    <div class="Container">
+      <h1>Welcome to my webpage</h1>
+
+      <!-- Tabs -->
+      <div class="tab">
+        <button id="defaultOpen" class="tablinks" onclick="openMainTab(event, 'Intro')"><b>Introduction</b></button>
+        <button class="tablinks" onclick="openMainTab(event, 'About Me')"><b>About Me</b></button>
+        <button class="tablinks" onclick="openMainTab(event, 'My Works')"><b>My Works</b></button>
+        <button class="tablinks" onclick="openMainTab(event, 'Change Log')"><b>Change Log</b></button>
+        <button class="tablinks" onclick="openMainTab(event, 'References')"><b>References</b></button>
+      </div>
+
+      <!-- Tab Contents/Texts -->
+      <div id="Intro" class="tabcontent">
+        <h2>Welcome to my small corner of the internet</h2>
+        <p>It feels like everything on the internet these days seems to lose its personality and turn into
+          the same grey mass. All the websites look and feel the same, and you can't tell bot accounts from
+          real people. That's why I decided to turn into indie web development and make my own webpage.
+          I created this webpage to gather some of the projects that I'm proud of, and also to show show them to
+          anyone who might be interested.
+          <br><br>
+          Almost everything found on this page is my own work, but the exceptions can be found in the <i>References</i>
+          tab.
+          Also, I have not used AI in my projects other than for proofreading my texts and some code snippets.
+          I think I have dyslexia and I suck at coding, so please give me a break :D
+          <br><br>
+          The page is still under construction (and will probably remain so for a while), but I'll try to update
+          it whenever I have free time.
+          But still, feel free to browse the different tabs and their contents. And I'm well aware that I have shared
+          quite
+          a lot of information about myself through this site, but I can assure any hacker that my passwords have
+          nothing
+          to do with my interests or work.
+        </p>
+        <h2>DISCLAIMER</h2>
+        <p>This website is designed to be used on a computer. Some features may not work or appear correctly
+           on mobile devices. Additionally, this website has only been tested with Firefox, Chrome, MS Edge and Opera GX browsers, 
+           so I cannot guarantee that the site will work properly on any other browsers.
+
+        </p>
+      </div>
+
+
+      <div id="About Me" class="tabcontent">
+        <h2>General Information</h2>
+        <div class="bulletpoint_w_image">
+          <div class="bulletpoint_container">
+            <ul>
+              <li>My name a Joonas</li>
+              <li>Been alive for 23 years</li>
+              <li>Mechanical engineering student</li>
+              <li>Born to be whimsical, forced to LOCK IN</li>
+              <li>Likes:</li>
+              <ul>
+                <li>Making stuff</li>
+                <li>Metal music</li>
+                <li>Great stories</li>
+              </ul>
+              <li>Dislikes:</li>
+              <ul>
+                <li>Ads</li>
+                <li>Drivers who accelerate when you are passing them</li>
+              </ul>
+              <li>Hobbies:</li>
+              <ul>
+                <li>3D modeling and printing</li>
+                <li>Running</li>
+                <li>Gaming</li>
+              </ul>
+            </ul>
+          </div>
+          <div id="ChangePortrait"></div>
+        </div>
+        <h2>Multimedia Greatest Hits:</h2>
+        <div class="sub_tab">
+          <button class="sub_tablinks" onclick="openSubTab(event, 'Albums')"><b>Albums</b></button>
+
+          <button class="sub_tablinks" onclick="openSubTab(event, 'Games')"><b>Games</b></button>
+          <button class="sub_tablinks" onclick="openSubTab(event, 'Movies')"><b>Movies</b></button>
+          <button class="sub_tablinks" onclick="openSubTab(event, 'Books and Comics')"><b>Books/Comics</b></button>
+        </div>
+
+        <div id="Albums" class="sub_tabcontent">
+
+          <div class="row_grid">
+            <div class="column">
+              <img src="media\home\albums\Fatalism_2560.jpg">
+              <img src="media\home\albums\AppealToReason_1200.jpg">
+              <img src="media\home\albums\Hiekka_1200.jpg">
+              <img src="media\home\albums\TCATS_1400.jpg">
+              <img src="media\home\albums\TDOPOM_1400.jpg">
+              <img src="media\home\albums\WhitePony_1200.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\albums\HybridTheory_1425.jpg">
+              <img src="media\home\albums\Hypnotize_1400.jpg">
+              <img src="media\home\albums\Vol3TheSubliminalVerses_1425.jpg">
+              <img src="media\home\albums\Impera_1400.jpg">
+              <img src="media\home\albums\ThePoison_1400.jpg">
+              <img src="media\home\albums\YouAreInBothDreams.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\albums\KeskeneraisiaTarinoita_1200.jpg">
+              <img src="media\home\albums\Lateralus_1400.jpg">
+              <img src="media\home\albums\KID_A_MNESIA_2560.jpg">
+              <img src="media\home\albums\Trauma_1400.jpg">
+              <img src="media\home\albums\TapaPoika_1400.jpg">
+              <img src="media\home\albums\YWGBYST_1448.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\albums\Magma_1425.jpg">
+              <img src="media\home\albums\Mutter_1400.jpg">
+              <img src="media\home\albums\SFTD_1400x1384.jpg">
+              <img src="media\home\albums\TsunamiSea_2560.jpg">
+              <img src="media\home\albums\Singularity_1425.jpg">
+            </div>
+
+          </div>
+        </div>
+
+
+        <div id="Games" class="sub_tabcontent">
+          <div class="row_grid">
+            <div class="column">
+              <img src="media\home\games\AlanWake2.jpg">
+              <img src="media\home\games\TalosPrinciple.jpg">
+              <img src="media\home\games\BatmanArkhamAsylum.jpg">
+              <img src="media\home\games\BF_BadCompany2.jpg">
+              <img src="media\home\games\SIFU.jpg">
+              <img src="media\home\games\LoZ_OoT.jpg">
+              <img src="media\home\games\Frostpunk.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\games\MetroExodus.jpg">
+              <img src="media\home\games\Burnout3_Takedown.jpg">
+              <img src="media\home\games\GoW2018.jpg">
+              <img src="media\home\games\GTA4.jpg">
+              <img src="media\home\games\Hades.jpg">
+              <img src="media\home\games\Halo2.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\games\HollowKnight.jpg">
+              <img src="media\home\games\HyperLightDrifter.png">
+              <img src="media\home\games\Uncharted2.jpg">
+              <img src="media\home\games\Inscryption.jpg">
+              <img src="media\home\games\Lisa.jpg">
+              <img src="media\home\games\Doom2016.png">
+            </div>
+
+            <div class="column">
+              <img src="media\home\games\MaxPayne.jpg">
+              <img src="media\home\games\ShortHike.jpg">
+              <img src="media\home\games\OuterWilds.jpg">
+              <img src="media\home\games\PL_CuriousVillage.jpg">
+              <img src="media\home\games\Portal2.jpg">
+              <img src="media\home\games\RaymanLegends.jpg">
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div id="Movies" class="sub_tabcontent">
+          <div class="row_grid">
+            <div class="column">
+              <img src="media\home\movies\BackToTheFuture.jpg">
+              <img src="media\home\movies\Memento.jpg">
+              <img src="media\home\movies\Interstellar.jpg">
+              <img src="media\home\movies\Shutter_Island.jpg">
+              <img src="media\home\movies\ETTGS.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\movies\Batman.jpg">
+              <img src="media\home\movies\Good_Will_Hunting.png">
+              <img src="media\home\movies\Nightcrawler.jpg">
+              <img src="media\home\movies\Terminal.jpg">
+              <img src="media\home\movies\Whiplash.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\movies\BladeRunner2049.jpg">
+              <img src="media\home\movies\Guardians_of_the_Galaxy.jpg">
+              <img src="media\home\movies\Platform.jpg">
+              <img src="media\home\movies\TheGreenMile.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\movies\DeadPoetsSociety.jpg">
+              <img src="media\home\movies\HowlsMovingCastle.jpg">
+              <img src="media\home\movies\Saw.jpg">
+              <img src="media\home\movies\Wall-e.jpg">
+            </div>
+
+          </div>
+        </div>
+
+
+        <div id="Books and Comics" class="sub_tabcontent">
+          <div class="row_grid">
+            <div class="column">
+              <img src="media\home\books\RoadsidePicnic.jpg">
+              <img src="media\home\books\Metro_2033.jpg">
+              <img src="media\home\books\LongWalk.jpg">
+              <img src="media\home\books\AnimalFarm.jpg">
+              <img src="media\home\books\CourtOfOwsl.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\books\Siilo.jpg">
+              <img src="media\home\books\Lumiukko.jpg">
+              <img src="media\home\books\Frankenstein.jpg">
+              <img src="media\home\books\1984.jpg">
+              <img src="media\home\books\ChainsawMan.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\books\NorseMythology.jpg">
+              <img src="media\home\books\LordOfTheFlies.jpg">
+              <img src="media\home\books\DeathOfIvanIlyich.jpg">
+              <img src="media\home\books\HGTG.jpg">
+              <img src="media\home\books\Berserk.jpg">
+            </div>
+
+            <div class="column">
+              <img src="media\home\books\Neuromancer.jpg">
+              <img src="media\home\books\Iliad.jpg">
+              <img src="media\home\books\Tuntematon.jpg">
+              <img src="media\home\books\SongOfAchilles.jpg">
+              <img src="media\home\books\Hush.jpg">
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="My Works" class="tabcontent">
+        <div class="text_container">
+          <h2>3D modeling</h2>
+          <p>For 3D modeling, I mainly use Solidworks for CAD models and Blender for anything
+            that requires more "free flowing" shapes. I've experimented with some other softwares, but
+            since I've been using SW and Blender the longest, those programs just feel the most natural to me.
+          </p>
+        </div>
+        <button class="tablinks" onclick="window.location.href='3D_models_SW.html'"><b>Solidworks</b></button>
+        <button class="tablinks" onclick="window.location.href='3D_models_Blender.html'"><b>Blender</b></button>
+        <button class="tablinks" onclick="window.location.href=''"><b>Other Softwares (COMING SOON) </b></button>
+
+        <br><br>
+
+
+        <div class="text_container">
+          <h2>School Projects</h2>
+          <p>Some of the more interesting course projects I have had in University:</p>
+        </div>
+        <button class="tablinks" onclick="window.location.href=''"><b>(COMING SOON)</b></button>
+
+        <br><br>
+
+        <div class="text_container">
+          <h2>Other Projects</h2>
+          <p>I've been working on some silly things:</p>
+        </div>
+        <button class="tablinks" onclick="window.location.href='Cat_GPT.html'"><b>CatGPT</b></button>
+        <button class="tablinks" onclick="window.location.href=''"><b>Games (COMING SOON)</b></button>
+      </div>
+
+      <div id="Change Log" class="tabcontent">
+        <div class="Log_lists">
+          <h2>Development Updates</h2>
+          <ul>
+            <li>26.09.2025 - CatGPT is up and running (It's definitely AI, don't check the source code)</li>
+            <li>25.09.2025 - Test version of this website uploaded to GitHub</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="References" class="tabcontent">
+        <h2>References</h2>
+        <div class="Log_lists">
+          <ul>
+            <li>Huge help in coding this website: <a href="https://www.w3schools.com/">W3Schools</a></li>
+            <li>Main color palette: <a href="https://lospec.com/palette-list/retrotronic-dx">RetrotronicDX</a> by Doph
+            </li>
+            <li>Website icon: <a href="https://www.favicon.cc/?action=icon&file_id=914332">laptop-color</a> by
+              lagrimaescrita</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy;2025. Joonas L. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+<!-- Javascript link-->
+<script src="script.js"></script>
+
+</html>

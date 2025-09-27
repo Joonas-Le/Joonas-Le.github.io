@@ -1,0 +1,85 @@
+<!DOCTYPE <html>
+<html>
+<!-- metadata -->
+<title>CatGPT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<!-- elements -->
+
+<body>
+    <main>
+        <div class="Container">
+            <h1>CatGPT</h1>
+
+            <!-- Tabs -->
+            <div class="tab">
+                <button class="tablinks" onclick="window.location.href='index.html'"><b>Back to Home Page</b></button>
+                <button id="defaultOpen" class="tablinks" onclick="openMainTab(event, 'CatGPT')"><b>CatGPT</b></button>
+                <button class="tablinks" onclick="openMainTab(event, 'My Works')"><b>My Other Works</b></button>
+            </div>
+
+
+            <!-- Tab Contents/Texts -->
+            <div id="CatGPT" class="tabcontent">
+                <h2>Chat With Highly Intelligent AI</h2>
+                <img id="catAvatar" src="media\CatGPT\Cats_still.png" />
+
+                <div id="chatbox">
+                    <div id="chatlog"></div>
+
+                    <input type="text" id="userInput" placeholder="Ask anything..." />
+                    <button id="ChatSendBtn" onclick="sendMessage()">Send</button>
+                </div>
+
+            </div>
+
+
+
+            <div id="My Works" class="tabcontent">
+                <div class="text_container">
+                    <h2>3D modeling</h2>
+                    <p>For 3D modeling, I mainly use Solidworks for CAD models and Blender for anything
+                        that requires more "free flowing" shapes. I've experimented with some other softwares, but
+                        since I've been using SW and Blender the longest, those programs just feel the most natural to
+                        me.
+                    </p>
+                </div>
+                <button class="tablinks" onclick="window.location.href='3D_models_SW.html'"><b>Solidworks</b></button>
+                <button class="tablinks" onclick="window.location.href='3D_models_Blender.html'"><b>Blender</b></button>
+                <button class="tablinks" onclick="window.location.href=''"><b>Other Softwares (COMING SOON)
+                    </b></button>
+
+                <br><br>
+
+
+                <div class="text_container">
+                    <h2>School Projects</h2>
+                    <p>Some of the more interesting course projects I have had in University:</p>
+                </div>
+                <button class="tablinks" onclick="window.location.href=''"><b>(COMING SOON)</b></button>
+
+                <br><br>
+
+                <div class="text_container">
+                    <h2>Other Projects</h2>
+                    <p>I've been working on some silly things:</p>
+                </div>
+                <button class="tablinks" onclick="window.location.href='Cat_GPT.html'"><b>CatGPT</b></button>
+                <button class="tablinks" onclick="window.location.href=''"><b>Games (COMING SOON)</b></button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;2025. Joonas L. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Javascript link-->
+    <script src="script.js"></script>
+</body>
+
+</html>
