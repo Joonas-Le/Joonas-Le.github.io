@@ -8,12 +8,13 @@ html {
     box-sizing: border-box
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -47,14 +48,22 @@ h2 {
     text-align: center;
 }
 
+
+a {
+    color: #bb474f;
+    /* Change to your desired color */
+}
+
 main {
-    flex: 1;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .Container {
-    outline: #bb474f 8px solid;
-    border: #392b35 24px double;
-    outline-offset: -16px;
+    outline: #bb474f 6px solid;
+    border: #392b35 18px double;
+    outline-offset: -12px;
 
     background-color: #7a9c96;
     width: 100%;
@@ -62,9 +71,9 @@ main {
     height: auto;
 
     padding: 15px;
-    margin: 20px auto; 
+    margin: 20px auto;
     text-align: center;
-    flex: 1;
+
 }
 
 .bulletpoint_container {
@@ -75,40 +84,84 @@ main {
 }
 
 #ChangePortrait {
-  background-image: url('media/portrait_export.png');
-  width: 264px;
-  height: 388px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-image 0.3s ease;
+    background-image: url('media/home/portrait_export.png');
+    width: 264px;
+    height: 388px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
 }
 
 #ChangePortrait:hover {
-   background-image: url('media/portrait_smile.png');
+    background-image: url('media/home/portrait_smile.png');
 }
 
 .bulletpoint_w_image {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Responsive stacking */
+@media screen and (max-width: 768px) {
+    .bulletpoint_w_image {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row_grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 90%;
+        /* Optional: keep it nicely sized */
+    }
+
+
+    .flex_container {
+        flex-direction: column;
+        align-items: stretch;
+        /* optional: makes children fill width */
+    }
+
+    .slideshow_text_cont {
+        text-align: center;
+        /* optional: center text on small screens */
+        margin-bottom: 10px;
+        /* spacing between text and scroll container */
+    }
+
+    .scroll-container {
+        overflow-x: auto;
+    }
+
 }
 
 
 
 
 footer {
-  padding: 10px;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 
+.Log_lists {
+    color: #d1bfb0;
+    text-align: left;
+}
+
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 2px solid #392b35;
+    border: 3px solid #392b35;
     background-color: #423952;
 }
 
@@ -130,7 +183,7 @@ footer {
 .tabcontent button {
     background-color: #423952;
     color: #bb474f;
-    border: 2px solid #392b35;
+    border: 3px solid #392b35;
     cursor: pointer;
     padding: 14px 30px;
     transition: 0.3s;
@@ -165,7 +218,7 @@ footer {
 .tabcontent {
     display: none;
     background-color: #486b7f;
-    border: 2px solid #444760;
+    border: 3px solid #392b35;
     padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
@@ -206,7 +259,17 @@ footer {
 
 .mySlides0,
 .mySlides1,
-.mySlides2 {
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5,
+.mySlides6,
+.mySlides7,
+.mySlides8,
+.mySlides9,
+.mySlides10,
+.mySlides11,
+.mySlides12 {
     display: none
 }
 
@@ -233,14 +296,17 @@ video {
     user-select: none;
 }
 
+
+
+/* Positions of the "prev/next buttons" to the considering the image border/radius (3px) */
 .prev {
-    left: 0;
+    left: 3px;
     border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+
 .next {
-    right: 0;
+    right: 3px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -292,8 +358,13 @@ video {
 
 .small_img_container img,
 .small_img_container video {
-    filter: brightness(60%);
+    filter: brightness(50%);
     cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.small_img_container .active-thumb {
+    filter: brightness(100%) !important;
 }
 
 .small_img_container img:hover,
@@ -301,10 +372,20 @@ video {
     filter: brightness(100%);
 }
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
+}
+
+.row_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    /* Center each image horizontally */
+    padding: 10px;
 }
 
 .column_4_imgs {
@@ -319,17 +400,15 @@ video {
     padding: 4px;
 }
 
-/* This column is used ONLY for home page image collages!! */
+/* This column is used ONLY for home page image grid!! */
 .column {
-  flex: 20%;
-  max-width: 20%;
-  padding: 0 4px;
+    padding: 0;
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
 .video {
@@ -340,3 +419,129 @@ video {
     object-fit: cover;
 }
 
+
+/* Scroll containers used for Blender models tab: */
+
+.scroll-container {
+    flex: 2 1 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: #423952;
+    border: 3px solid #392b35;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 100%;
+    min-height: 320px; 
+
+
+    /* Firefox scrollbar */
+    scrollbar-width: auto;
+    scrollbar-color: #bb474f #555;
+
+}
+
+.scroll-content {
+    display: inline-flex;
+    gap: 0px;
+}
+
+.scroll-content img,
+.scroll-content video {
+    max-height: 300px;
+    width: auto;
+    flex-shrink: 0;
+    border: 3px solid #392b35;
+    border-radius: 4px;
+}
+
+
+
+/* Webkit scrollbar */
+.scroll-container::-webkit-scrollbar {
+    height: 16px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #555;
+    border-radius: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #bb474f;
+    border-radius: 8px;
+    border: 3px solid #555;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #a53b42;
+}
+
+
+
+
+
+
+/* CatGPT */
+
+#catAvatar {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+
+#chatbox {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #444760;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+    font-size: 30px;
+    border: 3px #392b35 solid;
+}
+
+#chatlog {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.user {
+    color: #bb474f;
+}
+
+.bot {
+    color: #7a9c96;
+}
+
+#userInput {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-family: "Agency FB", Arial, sans-serif;
+}
+
+#ChatSendBtn {
+    width: 25%;
+    padding: 8px;
+    background-color: #bb474f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#ChatSendBtn:hover {
+    background-color: #a53b42;
+}
