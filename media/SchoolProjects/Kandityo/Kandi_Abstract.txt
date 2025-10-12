@@ -1,0 +1,13 @@
+61 sivua (10 856 sanaa)
+
+APPLICATION OF COLLABORATIVE ROBOTS IN WELDING PRODUCTION
+
+Bachelor’s thesis
+2024
+53 pages, 14 figures, 4 tables and 7 appendices
+Examiners: Associate Professor Tuomas Skriko and Laboratory Engineer Esa Hiltunen
+Keywords: Collaborative robot, cobot, human-robot collaboration, welding, suitability as-sessment, production development
+
+Consumers' demands for customized products during Industry 4.0 undermines the position of traditional mass production, because of its incapability to respond quickly enough to consumers' demands. The growing shortage of welders will slow down the production of customized products even more. For small and medium-sized companies to remain compet-itive in the future, they must move to adopting more innovative technology as part of their production lines. 
+Collaborative robots, or cobots, bring the necessary flexibility to production without replac-ing workforce or traditional welding robots that are already in use. A cobot acts as an aid to the employee, reducing their monotonous, heavy and health-threatening work. Cobots are made very user-friendly and therefore the operator does not need to be an experienced welder or a programmer to use the cobot efficiently. 
+Before investing in automation, it is critical to distinguish the differences between manual, traditional and cobot welding in terms of their intended use. Each process excels in certain areas and the type of welding task dictates the best process for that task. Collaborative robot is a hybrid between manual and robot welding, so it brings out the best aspects of both. The combination of the human problem-solving ability and the cobot's precision and speed enables increased productivity, consistent quality and continuous arc time in weld-ing. People’s interest in the potential of cobots as part of welding production can be seen from the increase in research and their economic demand.

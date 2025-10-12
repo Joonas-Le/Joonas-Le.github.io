@@ -12,21 +12,27 @@
 <body>
 
     <div class="Container">
-        <h1>3D Models made in Blender</h1>
+        <h1>Some of my school projects at LUT University</h1>
 
         <!-- Tabs -->
         <div class="tab">
             <button class="tablinks" onclick="window.location.href='index.html'"><b>Back to Home Page</b></button>
-            <button id="defaultOpen" class="tablinks" onclick="openMainTab(event, 'Blender')"><b>Blender
-                    Models</b></button>
+            <button id="defaultOpen" class="tablinks" onclick="openMainTab(event, 'School')"><b>School
+                    Projects</b></button>
             <button class="tablinks" onclick="openMainTab(event, 'My Works')"><b>My Other Works</b></button>
         </div>
 
 
         <!-- Tab Contents/Texts -->
-        <div id="Blender" class="tabcontent">
-            <h2>CAD Modeling</h2>
-            <p>Placeholder text...
+        <div id="School" class="tabcontent">
+            <h2>The most memorable courses in Univeristy</h2>
+            <p>I've been studying mechanical engineering at Lappeenranta Univeristy of Technology (LUT) for 4 years now
+                and I've completed a total of 58 courses (45 courses for BSc; 13 for MSs) and have received a Bachelor's
+                degree.
+                <br><br>
+                Below is a collage of some of the most useful or otherwise memorable courses I've had so far. The
+                contents are roughly in order from newest to oldest. When hovering over the images/videos, 
+                you can scroll to see more content using the appearing red scrollbar. 
             </p>
         </div>
 
@@ -34,19 +40,14 @@
         <div id="My Works" class="tabcontent">
             <div class="text_container">
                 <h2>3D modeling</h2>
-                <p>Check out what other things I have made in 3D:</p>
+                <p>For 3D modeling, I mainly use Solidworks for CAD models and Blender for anything
+                    that requires more "free flowing" shapes. I've experimented with some other softwares, but
+                    since I've been using SW and Blender the longest, those programs just feel the most natural to me.
+                </p>
             </div>
             <button class="tablinks" onclick="window.location.href='3D_models_SW.html'"><b>Solidworks</b></button>
+            <button class="tablinks" onclick="window.location.href='3D_models_Blender.html'"><b>Blender</b></button>
             <button class="tablinks" onclick="window.location.href=''"><b>Other Softwares (COMING SOON) </b></button>
-
-            <br><br>
-
-
-            <div class="text_container">
-                <h2>School Projects</h2>
-                <p>Some of the more interesting course projects I have had in University:</p>
-            </div>
-            <button class="tablinks" onclick="window.location.href=''"><b>(COMING SOON)</b></button>
 
             <br><br>
 
@@ -59,45 +60,271 @@
         </div>
 
 
-        <!-- 1. Model: Tuuletinsuoja -->
+        <!-- 12. Project: Advanced Additive Manufacturing -->
         <div class="flex_container">
             <div class="slideshow_text_cont">
-                <h2>Crate for batteries</h2>
-                <p>Some example text on the FIRST image... text, text, text, text, text, text, text,
-                    text, text, text, text, text, text, text...
+                <h2>Advanced Additive Manufacturing</h2>
+                <p> (COURSE STILL IN PROGRESS)<br>
+                    Our first task was to model a device that can separate water from compressed air.
+                    At first I made a three-part design, but that was rejected by the professor, so
+                    I made a new one-part design. Both models "should" work and they can be 3D-printed
+                    without major support structures.
                 </p>
             </div>
             <div class="scroll-container">
                 <div class="scroll-content">
                     <video class="video" autoplay loop muted>
-                        <source src="media\SW\jetengine\JetEngine_Assembly.mp4" style="width: 100%;">
+                        <source src="media\SchoolProjects\Advanced_AM\WaterSeparator_Assembly_JL.mp4">
                     </video>
-                    <img src="media\SW\jetengine\JetEngine_Still.png" style="width:100%">
-                    <img src="media\SW\jetengine\JetEngine_Pic.jpg" style="width:100%">
+                    <img src="media\SchoolProjects\Advanced_AM\AAM_1.jpg">
+                    <img src="media\SchoolProjects\Advanced_AM\AAM_2.jpg">
                 </div>
             </div>
         </div>
 
-        <!-- 0. Model: Tuuletinsuoja -->
+        <!-- 11. Project: Weld Auto -->
         <div class="flex_container">
             <div class="slideshow_text_cont">
-                <h2>Crate for batteries</h2>
-                <p>Some example text on the FIRST image... text, text, text, text, text, text, text,
-                    text, text, text, text, text, text, text...
+                <h2>Welding Automation</h2>
+                <p> A really cool course, where we got to make a
+                    online welding program and weld parts with it in our university's welding laboratories.
+                    We also made a separate offline welding program in Visual Components OLP, 
+                    that can be seen in the video/image.
+                    The video is 20 times faster than the intended run time.
                 </p>
             </div>
             <div class="scroll-container">
                 <div class="scroll-content">
                     <video class="video" autoplay loop muted>
-                        <source src="media\SW\jetengine\JetEngine_Assembly.mp4" style="width: 100%;">
+                        <source src="media\SchoolProjects\WeldAuto\WeldAuto_Project_Video20x.mp4">
                     </video>
-                    <img src="media\SW\jetengine\JetEngine_Still.png" style="width:100%">
-                    <img src="media\SW\jetengine\JetEngine_Pic.jpg" style="width:100%">
+                    <img src="media\SchoolProjects\WeldAuto\WeldAuto_1.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. Project: SoMM -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Simulation of a Mechatronic Machine</h2>
+                <p>A course with probably the best professor I've had so far. He made learning hard
+                    concepts actually fun AND understandable. The course also included simulating a
+                    hydraulic lifting
+                    boom system in MatLab Simulink (see images).
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\SoMM\SoMM_1.jpg">
+                    <img src="media\SchoolProjects\SoMM\SoMM_2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Project: Manufacturing -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Principles of Industrial Manufacturing Processes</h2>
+                <p>As one of the exercises, we made G-code for CNC-machining a part.
+                    We also had a group project where we took apart a machine of our choice,
+                    redesigned the parts, and thought of better manufacturing methods for the parts. <br>
+                    My part was the rotor.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Manufacturing\CAM_exe.jpg">
+                    <img src="media\SchoolProjects\Manufacturing\CAM_exercise_Joonas_Lehmusvuori.PNG">
+                    <img src="media\SchoolProjects\Manufacturing\GroupWork.jpg">
+                    <img src="media\SchoolProjects\Manufacturing\GroupWork_2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Project: Bachelor's Thesis -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Bachelor's Thesis</h2>
+                <p>I did my bachelor's thesis about the application of collaborative robots (cobots)
+                    in welding production.
+                    <br><br>
+                    Like all theses, my thesis is public and you can read it on
+                    <a
+                        href="https://lutpub.lut.fi/bitstream/handle/10024/167377/Kandidaatintyo_Lehmusvuori_Joonas.pdf?sequence=1&isAllowed=y">LUTPub.</a>
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Kandityo\Kandi_2.jpg">
+                    <img src="media\SchoolProjects\Kandityo\Kandi_1.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Project: Steel Structures -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Steel Structures</h2>
+                <p>A course about strength analysis of different steel structures and welded joints.
+                    Here's two very short examples of the tasks we had to do. The first task (img. 1-3) uses rain flow method
+                    to calculate the equivalent force of a fatigue work cycle. <br>
+                    In the second task(img. 3-5)
+                    I calculated how many work cycles a welded joint should last.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Steel_Structures\SteelS_1.jpg">
+                    <img src="media\SchoolProjects\Steel_Structures\SteelS_1-2.jpg">
+                    <img src="media\SchoolProjects\Steel_Structures\SteelS_1-3.jpg">
+                    <img src="media\SchoolProjects\Steel_Structures\SteelS_1-4.jpg">
+                    <img src="media\SchoolProjects\Steel_Structures\SteelS_3.jpg">
+                    <img src="media\SchoolProjects\Steel_Structures\SteelS_3-2.jpg">
                 </div>
             </div>
         </div>
 
 
+        <!-- 6. Project: Wind and Solar -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Wind Power and Solar Energy Technology and Business</h2>
+                <p>A course with a pretty fun task of planning a wind farm in a predetermined area in Finland.
+                    My area was Southern Ostrobothnia, and used Tuuliatlas to collect wind data to
+                    settle for the most optimal spot for my imaginary wind farm. We also had to determine what
+                    wind turbines to use and do some simple calculations on financing the wind farm.
+
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Wind_Solar\Wind_1.jpg">
+                    <img src="media\SchoolProjects\Wind_Solar\Wind_3.jpg">
+                    <img src="media\SchoolProjects\Wind_Solar\Wind_2.jpg">
+                    <img src="media\SchoolProjects\Wind_Solar\Wind_4.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Project: Koneensuunnittelu -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Machine Design</h2>
+                <p> As a group we designed a prototype for a modular oil purifier for a local business.
+                    From the images/video you can see the very first hand-drawn idea for the design and
+                    the final assembly. This was truly a rare group work project because everyone
+                    in the group did their part AND as best as they could.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\KoneenSuunnittelu\KoSu_1.jpg">
+                    <img src="media\SchoolProjects\KoneenSuunnittelu\KoSu_2.jpg">
+                    <video class="video" autoplay loop muted>
+                        <source src="media\SchoolProjects\KoneenSuunnittelu\KoSu_Video.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Project: FE-Analysis -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>FE-Analysis</h2>
+                <p>Finite Element Analysis course, where we used mostly Femap to analyse different structures.
+                    The first image shows the translation of a structure and the second image
+                    shows Von Mises stresses affecting in a plate.
+                    The last image is from MatLab, and it's used to validate the results from Femap and
+                    to show how the number of elements affects the results.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\FE_Analysis\FEA_1.jpg">
+                    <img src="media\SchoolProjects\FE_Analysis\FEA_2.jpg">
+                    <img src="media\SchoolProjects\FE_Analysis\FEA_3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Project: TeSu -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Technical Design</h2>
+                <p>A bit more extensive project made in a group, where we had to design a machine and build it.
+                    We made a trash compactor, and my resposibility was coming up with a support structure
+                    for our pneumatic cylinder. <br>
+                    From the images you can see an idea-matrix for different functions of the compactor and
+                    iterations of the design process for the cylinder support.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Tekninen_Sunnittelu\TeSu_1.jpg">
+                    <img src="media\SchoolProjects\Tekninen_Sunnittelu\TeSu_2.jpg">
+                    <img src="media\SchoolProjects\Tekninen_Sunnittelu\TeSu_3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Project: Lujuusoppi -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Strength Theory</h2>
+                <p>We had two courses on strength theory. The first course had only pen-and-paper
+                    submissions for our assignments. The second course had a lot to do with standards
+                    and using ready-made calculation formulas. Thanks physicists!!
+                    The images (imgs. 2-4) show an example of dimensioning a rectangle tube for a seat.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Lujuusoppi\LujuusTekniikanPerusteet.jpg">
+                    <img src="media\SchoolProjects\Lujuusoppi\Lujuusoppi_1.jpg">
+                    <img src="media\SchoolProjects\Lujuusoppi\Lujuusoppi_2.jpg">
+                    <img src="media\SchoolProjects\Lujuusoppi\Lujuusoppi_3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Project: Tekninen dokumentointi ja 3D mallinnus -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Technical Documentation and 3D modeling</h2>
+                <p>This course was my first introduction to 3D modeling and documentation. A good course, but the
+                    lackluster teaching and integration with academic Swedish studies made
+                    learning good 3D modeling and drawing practices a bit difficult.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Technical_Documentation\TechnicalDocumentation_1.jpg">
+                    <img src="media\SchoolProjects\Technical_Documentation\TechnicalDocumentation_2.jpg">
+                    <img src="media\SchoolProjects\Technical_Documentation\TechnicalDocumentation_3.jpg">
+                    <img src="media\SchoolProjects\Technical_Documentation\TechnicalDocumentation_4.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 0. Project: Mekaniikka -->
+        <div class="flex_container">
+            <div class="slideshow_text_cont">
+                <h2>Mechanics</h2>
+                <p>We had at least two courses for basic (and in some case not so basic)
+                    mechanics calculations. The images are from a project where we got
+                    to decide a real construct to calculate the forces acting on the support structure.
+                    My construct was a stand for kayaks.
+                </p>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="media\SchoolProjects\Mekaniikka\Mekaniikka_1.jpg">
+                    <img src="media\SchoolProjects\Mekaniikka\Mekaniikka_2.jpg">
+                    <img src="media\SchoolProjects\Mekaniikka\Mekaniikka_3.jpg">
+                    <img src="media\SchoolProjects\Mekaniikka\Mekaniikka_4.jpg">
+                </div>
+            </div>
+        </div>
 
 
     </div>

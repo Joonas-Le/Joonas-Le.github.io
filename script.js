@@ -1,3 +1,5 @@
+// Just please don't look at this code, thanks!
+
 // CatGPT replies at the top cause there is some dumbass initializing error
 const botReplies = [
   "Meow",

@@ -1,3 +1,5 @@
+/* Bro, what are you snooping around the CSS-file for? */
+
 html {
     background-color: #444760;
     font-family: "Agency FB", Arial, sans-serif;
@@ -51,7 +53,6 @@ h2 {
 
 a {
     color: #bb474f;
-    /* Change to your desired color */
 }
 
 main {
@@ -117,25 +118,22 @@ main {
 
     .column {
         width: 90%;
-        /* Optional: keep it nicely sized */
     }
 
 
     .flex_container {
         flex-direction: column;
         align-items: stretch;
-        /* optional: makes children fill width */
     }
 
     .slideshow_text_cont {
-        text-align: center;
-        /* optional: center text on small screens */
+        text-align: left;
         margin-bottom: 10px;
-        /* spacing between text and scroll container */
     }
 
     .scroll-container {
         overflow-x: auto;
+        width: 100%;
     }
 
 }
@@ -346,7 +344,8 @@ video {
 
 .slideshow_cont,
 .slideshow_text_cont {
-    flex: 1 1 300px;
+    flex: 1 1 0;
+    min-width: 250px; 
 }
 
 
@@ -423,7 +422,7 @@ video {
 /* Scroll containers used for Blender models tab: */
 
 .scroll-container {
-    flex: 2 1 0;
+    flex: 1.4 1 0; /* The 1.5 value controls the WIDTH of the container!! */
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -431,7 +430,6 @@ video {
     border: 3px solid #392b35;
     padding: 10px;
     border-radius: 4px;
-    max-width: 100%;
     min-height: 320px; 
 
 
@@ -444,20 +442,22 @@ video {
 .scroll-content {
     display: inline-flex;
     gap: 0px;
+    width: max-content; 
 }
 
 .scroll-content img,
 .scroll-content video {
+    height: auto;
     max-height: 300px;
     width: auto;
-    flex-shrink: 0;
-    border: 3px solid #392b35;
-    border-radius: 4px;
+    max-width: 100%;
+    flex: 0 0 auto; /* Prevent growing or shrinking */
+    object-fit: contain; /* Keep aspect ratio inside max dimensions */
 }
 
 
 
-/* Webkit scrollbar */
+/* Webkit scrollbar (Other browsers than Firefox) */
 .scroll-container::-webkit-scrollbar {
     height: 16px;
 }
